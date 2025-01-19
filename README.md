@@ -1,5 +1,5 @@
 
-Here’s an updated description tailored for a website built using only HTML and CSS. This i suitable only for desktop:
+This  website built using only HTML and CSS. This is suitable only for desktop:
 
 Honey Delight - Pure Honey Showcase 🍯
 Honey Delight is a simple and elegant static website designed to showcase and promote premium, organic honey products. Built entirely using HTML and CSS, the website features:
