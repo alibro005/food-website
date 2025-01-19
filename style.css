@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  height: 200vh;
+}
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+/* ______Navbar______ */
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  align-items: center;
+  margin-right: 50px;
+}
+#logo {
+  width: 40px;
+}
+
+.logo_container{
+  display: flex;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  padding: 0px 50px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color:#1E1E1F;
+}
+#navbar ul {
+  display: flex;
+  gap: 25px;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 0.95rem;
+}
+#navbar ul li a {
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: rgb(238, 188, 24);
+}
+#icons {
+  color: white;
+  background-color: #ff9f0d;
+  padding: 2px 20px 1px 20px;
+  font-size: 1.5rem;
+  border-radius: 20px;
+}
+#icons:hover {
+  background-color: rgba(255, 191, 0, 0.843);
+}
+/*_____Home_____ */
+#home{
+    height: 150vh;
+    margin-top: 120px;
+}
+#home_content {
+  display: flex;
+  justify-content: space-between;
+}
+#home_img img {
+  width: 400px;
+  margin-top: 40px;
+  margin-right: 70px;
+}
+.text {
+  margin-left: 100px;
+  margin-top: 100px;
+}
+.heading_home {
+  font-size: 2.9rem;
+  font-weight: 700;
+}
+.btn {
+  background-color: rgba(128, 128, 128, 0.382);
+  border: 1px solid rgba(128, 128, 128, 0.56);
+  border-radius: 50px;
+  padding: 10px;
+  width: 170px;
+  color: #ff9f0d;
+  font-weight: 500;
+  margin-top: 30px;
+  padding-right: 25px;
+  padding-left: 12px;
+}
+.btn:hover {
+  background-color: rgba(128, 128, 128, 0.139);
+}
+#home a {
+  color: #ff9f0d;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+#box {
+  display: flex;
+}
+.box {
+  background-color: #1E1E1F;
+  padding: 30px 90px;
+  margin-top: 80px;
+  text-align: center;
+  border: 2px solid #1E1E1F;
+  border-radius: 30px;
+  margin-left: 70px;
+}
+.box img {
+  width: 35px;
+}
+/*_______about________ */
+#about {
+  display: flex;
+  height: 150vh;
+  justify-content: space-between;
+  align-items: center;
+}
+#about img {
+  width: 420px;
+  margin-left: 30px;
+  margin-right: 60px;
+}
+#about h1 {
+    font-size: 2rem;
+}
+#about p {
+    font-size: .9rem;
+    margin-top: 14px;
+    margin-right: 40px;
+}
+/*_____Shop____ */
+#shop{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+.color {
+    color: #ff9f0d;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.color-1{
+    text-align: center;
+    margin-bottom: 90px;
+}
+#shop img {
+    width: 160px;
+}
+#shop h1 {
+    color: #ff9f0d;
+    text-align: center;
+}
+.shop{
+    background-color: #1E1E1F;
+    padding: 42px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    height: 390px;
+}
+#btn {
+    background-color: black;
+    color: #ff9f0d;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 45px;
+    
+}
+#btn:hover {
+  color: red;
+
+}
+.btn-1{
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.382);
+  border: 1px solid rgba(128, 128, 128, 0.56);
+  border-radius: 15px;
+  padding: 5px;
+  color: #ff9f0d;
+  font-weight: 500;
+  padding-right: 25px;
+  padding-left: 12px;
+  margin-bottom: 40px;
+  
+}
+/*_______Customer________ */
+#customer {
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+}
+#customer div {
+  height: 240px;
+}
+.box-1 {
+  background-color: #1E1E1F;
+  border-radius: 20px;
+  padding: 20px;
+  width: 330px;
+}
+.box-1 img {
+  margin-left: 10px;
+  height: 60px;
+  border-radius: 50%;
+  width: 60px;
+  margin-top: 20px;
+}
+.relate{
+  position: relative;
+  bottom: 60px;
+  margin-left: 80px;
+}
+/*____Scroll bar______ */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff9f0d;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #212121;
+  border-radius: 10px;
+}
+/* ______contact________ */
+#contact{
+   height: 80vh;
+}
+#img-1{
+  position: relative;
+  left: 50vw;
+  width: 180px;
+}
+#img-2{
+  position: relative;
+  left: 18vw;
+  width: 180px;
+}
+.head {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 60px;
+}
+#contact p {
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#links {
+  text-align: center;
+}
+#links i{
+  margin-top: 50px;
+  font-size: 2rem;
+  padding: 20px;
+  gap: 2rem;
+  cursor: pointer;
+}
+#links i:hover {
+  color: #ff9f0d;
+}
+.foot{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+.foot img {
+  width: 30px;
+}
+.text{
+  text-align: center;
+}
