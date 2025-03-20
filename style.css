@@ -29,9 +29,8 @@ a:visited {
   width: 40px;
 }
 
-.logo_container{
+.logo_container {
   display: flex;
-
 }
 
 header {
@@ -44,7 +43,7 @@ header {
   top: 0;
   z-index: 1;
   width: 100%;
-  background-color:#1E1E1F;
+  background-color: #1e1e1f;
 }
 #navbar ul {
   display: flex;
@@ -71,9 +70,9 @@ header {
   background-color: rgba(255, 191, 0, 0.843);
 }
 /*_____Home_____ */
-#home{
-    height: 150vh;
-    margin-top: 120px;
+#home {
+  height: 120vh;
+  margin-top: 120px;
 }
 #home_content {
   display: flex;
@@ -117,11 +116,11 @@ header {
   display: flex;
 }
 .box {
-  background-color: #1E1E1F;
+  background-color: #1e1e1f;
   padding: 30px 90px;
   margin-top: 80px;
   text-align: center;
-  border: 2px solid #1E1E1F;
+  border: 2px solid #1e1e1f;
   border-radius: 30px;
   margin-left: 70px;
 }
@@ -141,58 +140,60 @@ header {
   margin-right: 60px;
 }
 #about h1 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 #about p {
-    font-size: .9rem;
-    margin-top: 14px;
-    margin-right: 40px;
+  font-size: 0.9rem;
+  margin-top: 14px;
+  margin-right: 40px;
 }
 /*_____Shop____ */
-#shop{
-    display: flex;
-    justify-content: space-evenly;
-    height: 100vh;
+#shop {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100vh;
 }
 .color {
-    color: #ff9f0d;
-    text-align: center;
-    margin-bottom: 10px;
+  color: #ff9f0d;
+  text-align: center;
+  margin-bottom: 10px;
 }
-.color-1{
-    text-align: center;
-    margin-bottom: 90px;
+.color-1 {
+  text-align: center;
+  margin-bottom: 90px;
 }
 #shop img {
-    width: 160px;
+  width: 160px;
 }
 #shop h1 {
-    color: #ff9f0d;
-    text-align: center;
+  color: #ff9f0d;
+  text-align: center;
 }
-.shop{
-    background-color: #1E1E1F;
-    padding: 42px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 20px;
-    height: 390px;
+.shop {
+  background-color: #1e1e1f;
+  padding: 42px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  height: 390px;
+}
+.shop p,
+.shop h3 {
+  text-align: center;
 }
 #btn {
-    background-color: black;
-    color: #ff9f0d;
-    border: 2px solid black;
-    border-radius: 20px;
-    padding: 10px;
-    margin-top: 30px;
-    margin-left: 45px;
-    
+  background-color: black;
+  color: #ff9f0d;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 30px;
+  margin-left: 45px;
 }
 #btn:hover {
   color: red;
-
 }
-.btn-1{
+.btn-1 {
   text-align: center;
   background-color: rgba(128, 128, 128, 0.382);
   border: 1px solid rgba(128, 128, 128, 0.56);
@@ -203,7 +204,6 @@ header {
   padding-right: 25px;
   padding-left: 12px;
   margin-bottom: 40px;
-  
 }
 /*_______Customer________ */
 #customer {
@@ -215,7 +215,7 @@ header {
   height: 240px;
 }
 .box-1 {
-  background-color: #1E1E1F;
+  background-color: #1e1e1f;
   border-radius: 20px;
   padding: 20px;
   width: 330px;
@@ -227,7 +227,7 @@ header {
   width: 60px;
   margin-top: 20px;
 }
-.relate{
+.relate {
   position: relative;
   bottom: 60px;
   margin-left: 80px;
@@ -257,15 +257,15 @@ header {
   border-radius: 10px;
 }
 /* ______contact________ */
-#contact{
-   height: 80vh;
+#contact {
+  height: 80vh;
 }
-#img-1{
+#img-1 {
   position: relative;
   left: 50vw;
   width: 180px;
 }
-#img-2{
+#img-2 {
   position: relative;
   left: 18vw;
   width: 180px;
@@ -283,7 +283,7 @@ header {
 #links {
   text-align: center;
 }
-#links i{
+#links i {
   margin-top: 50px;
   font-size: 2rem;
   padding: 20px;
@@ -293,7 +293,7 @@ header {
 #links i:hover {
   color: #ff9f0d;
 }
-.foot{
+.foot {
   display: flex;
   justify-content: space-around;
   margin-top: 60px;
@@ -301,6 +301,6 @@ header {
 .foot img {
   width: 30px;
 }
-.text{
+.text {
   text-align: center;
 }
