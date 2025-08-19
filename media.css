@@ -1,0 +1,93 @@
+@media (min-width: 240px) and (max-width: 1200px) {
+  #box {
+    display: none;
+  }
+
+  #about img {
+    display: none;
+  }
+}
+
+@media (min-width: 240px) and (max-width: 1000px) {
+  #home {
+    height: 20rem;
+  }
+  #about p {
+    margin-left: 16px;
+  }
+  #home_content {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  #home_img img {
+    width: 250px;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .text {
+    margin-left: 5px;
+    margin-top: 20px;
+  }
+  #home {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  #about {
+    text-align: center;
+  }
+  #shop {
+    flex-direction: column;
+    height: 120rem;
+    align-items: center;
+  }
+  #shop img {
+    margin-left: 50px;
+    width: 200px;
+  }
+  #btn {
+    margin-left: 80px;
+  }
+  #customer {
+    flex-direction: column;
+    align-items: center;
+    height: 60rem;
+  }
+
+  #img-1 {
+    display: none;
+  }
+  #img-2 {
+    display: none;
+  }
+  .shop{
+    padding: 38px;
+  }
+}
+
+@media (min-width: 240px) and (max-width: 486px) {
+  #shop img {
+    margin-left: 20px;
+    width: 200px;
+  }
+   .shop{
+    padding: 18px;
+  }
+
+  #btn {
+    margin-left: 80px;
+    margin-top: 17px;
+  }
+  .foot{
+    display: none;
+  }
+  .box-1{
+    width: 310px;
+  }
+  .text a{
+    display: none;
+  }
+  #contact{
+    height: 20rem;
+  }
+}

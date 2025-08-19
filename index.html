@@ -6,33 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Honey</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo_container">
-            <img id="logo" src="images/c2.png" alt="">
-            <div class="logo">
-                Honey
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="logo_container">
+                <img id="logo" src="images/c2.png" alt="">
+                <a href="#" class="nav__logo">Honey</a>
             </div>
-        </div>
-        <!________Nav bar__________>
-            <nav id="navbar" class="show">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#shop">Our Shop</a></li>
-                    <li><a href="#customer">Our Customer</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
+
+            <!---- Nav_Bar ----->
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <i class='bx bx-adjust' id="icon"></i>
+                    <li><a href="#home" class="nav__link">Home</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#shop" class="nav__link">Our Shop</a></li>
+                    <li><a href="#customer" class="nav__link">Our Customer</a></li>
+                    <li><a href="#contact" class="nav__link">Contact Us</a></li>
                 </ul>
-            </nav>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+
+            </div>
             <div id="icons">
                 <i class='bx bx-search'></i>
                 <i class='bx bx-cart'></i>
             </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
     </header>
+
     <!______ HOME_______>
+
         <section id="home">
             <div id="home_content">
                 <div class="text">
@@ -46,6 +61,7 @@
                     <img src="images/hero.png" alt="">
                 </div>
             </div>
+
             <div id="box">
                 <div class="box">
                     <img src="images/c1.png" alt="">
@@ -63,17 +79,19 @@
                     <p>Call US Now</p>
                 </div>
             </div>
+
         </section>
+
         <!_______About________>
+
             <section id="about">
                 <div><img src="images/about.png" alt=""></div>
                 <div>
                     <h1>Living well begins</h1>
                     <h1>with eating well.</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae rerum atque odit ducimus,
-                        perspiciatis
-                        nam quasi temporibus ad laborum dolorum animi, autem, modi eveniet fuga mollitia sint dolorem
-                        reiciendis esse Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>At Honey B, we believe that living well begins with eating well. That’s why we are dedicated to
+                        providing pure, natural, and wholesome products that support a healthy lifestyle. Our mission is
+                        to bring you quality you can trust, with taste you’ll love.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis distinctio temporibus illo
                         doloremque excepturi! Inventore, accusamus aut. Corporis excepturi illo, alias eos, itaque
                         officiis
@@ -82,81 +100,82 @@
                 </div>
 
             </section>
-            <!_______Shop________>
-                <h2 class="color">Our shop</h2>
-                <h1 class="color-1">Lets Check Popular Products</h1>
-                <section id="shop">
 
-                    <div class="shop">
-                        <img src="images/p1.png" alt="">
-                        <h3>Bluebery Honey</h3>
-                        <p>It is a long established fact that a reader.</p>
-                        <button id="btn">Order Now</button>
-                    </div>
-                    <div class="shop">
-                        <img src="images/p2.png" alt="">
-                        <h3>Wild flower Honey</h3>
-                        <p>It is a long established fact that a reader.</p>
-                        <button id="btn">Order Now</button>
-                    </div>
-                    <div class="shop">
-                        <img src="images/p3.png" alt="">
-                        <h3>Queen Bee Honey</h3>
-                        <p>It is a long established fact that a reader.</p>
-                        <button id="btn">Order Now</button>
-                    </div>
-                    <div class="shop">
-                        <img src="images/p4.png" alt="">
-                        <h3>Sogo Honey</h3>
-                        <p>It is a long established fact that a reader.</p>
-                        <button id="btn">Order Now</button>
+            <!_______Shop________>
+
+                <section id="shop_content">
+
+                    <h2 class="color">Our shop</h2>
+                    <h1 class="color-1">Lets Check Popular Products</h1>
+                    <div id="shop">
+                        <div class="shop">
+                            <img src="images/p1.png" alt="">
+                            <h3>Bluebery Honey</h3>
+                            <p>It is a long established fact that a reader.</p>
+                            <button id="btn">Order Now</button>
+                        </div>
+                        <div class="shop">
+                            <img src="images/p2.png" alt="">
+                            <h3>Wild flower Honey</h3>
+                            <p>It is a long established fact that a reader.</p>
+                            <button id="btn">Order Now</button>
+                        </div>
+                        <div class="shop">
+                            <img src="images/p3.png" alt="">
+                            <h3>Queen Bee Honey</h3>
+                            <p>It is a long established fact that a reader.</p>
+                            <button id="btn">Order Now</button>
+                        </div>
+                        <div class="shop">
+                            <img src="images/p4.png" alt="">
+                            <h3>Sogo Honey</h3>
+                            <p>It is a long established fact that a reader.</p>
+                            <button id="btn">Order Now</button>
+                        </div>
                     </div>
 
                 </section>
+
                 <!_____Customer______>
-                    <h2 class="color">Our Customers</h2>
-                    <h1 class="color-1">Clients Review About food</h1>
 
+                    <section id="customer_content">
+                        <h1 class="color">Our Customers</h1>
+                        <h1 class="color-1">Clients Review About food</h1>
+                        <div id="customer">
+                            <div class="box-1">
+                                <p>I absolutely love this honey! It tastes pure and natural, with a nice floral
+                                    sweetness. I use it every morning in my tea, and it dissolves perfectly. Way it
+                                    better.</p>
+                                <img src="images/r1.jpg" class="img_customer" alt="">
+                                <img src="images/star.png" class="star" alt="">
+                                <h5 class="relate">Excellent Product</h5>
+                            </div>
+                            <div class="box-1">
+                                <p>This is the best honey I’ve had in a long time. I spread it on bread, mix it in milk,
+                                    and even use it for sore throat relief. Highly recommend!. Still tastes great!</p>
+                                <img src="images/r2.jpg" class="img_customer" alt="">
+                                <img src="images/star.png" class="star" alt="">
 
+                                <h5 class="relate">Excellent Product</h5>
+                            </div>
+                            <div class="box-1">
+                                <p>Pure, golden, and delicious! My kids love it with pancakes, and I love that it’s a
+                                    healthy alternative to sugar. Works well in baking though. Highly recommend </p>
+                                <img src="images/r3.jpg" class="img_customer" alt="">
+                                <img src="images/star.png" class="star" alt="">
 
-                    <section id="customer">
-                        <div class="box-1">
-                            <p>Lorem ipsum dolor sit amet consectetur,ahdhdhbhbxhxhhsh. adipisicing elit.shshshs
-                                jjhhhhj.jhhygy.Labore debitis eaque et soluta quo, consequunt.</p>
-                            <img src="images/r1.jpg" class="img_customer" alt="">
-                            <img src="images/star.png" class="star" alt="">
-                            <h5 class="relate">Excellent Product</h5>
+                                <h5 class="relate">Excellent Product</h5>
+                            </div>
                         </div>
-                        <div class="box-1">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam aliquid dolorem quis
-                                necessitatibus
-                                molestiae, totam ab laborum omnis ducimus, sunt .</p>
-                            <img src="images/r2.jpg" class="img_customer" alt="">
-                            <img src="images/star.png" class="star" alt="">
-
-                            <h5 class="relate">Excellent Product</h5>
-                        </div>
-                        <div class="box-1">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo suscipit odio officia beatae
-                                neque
-                                excepturi, adipisci sunt quam veritatis? Fugiat aliquid </p>
-                            <img src="images/r3.jpg" class="img_customer" alt="">
-                            <img src="images/star.png" class="star" alt="">
-
-                            <h5 class="relate">Excellent Product</h5>
-                        </div>
-
-
-
                     </section>
-                    <!______Contact_____>
+                    <!____________Contact________>
+
                         <section id="contact">
                             <div><img id="img-1" src="images/f1.png" alt=""> <img id="img-2" src="/images/f2.png"
                                     alt=""></div>
                             <h1 class="head">Contact Us</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, laudantium distinctio
-                                accusamus quas blanditiis cupiditate aliquam dolor consequatur nemo cumque quidem nam
-                                maxime animi quam itaque quia minima recusandae ipsa.</p>
+                            <p>If you have any questions or need support, please reach out to us. We are always happy to
+                                assist you.</p>
                             <div id="links">
                                 <i class='bx bxl-facebook-circle'></i>
                                 <i class='bx bxl-linkedin'></i>
@@ -172,6 +191,7 @@
                             <div class="text">All Right Reserverd@ Muhammad ALi Siddiqui</div>
                         </section>
 
+                        <script src="index.js"></script>
 
 
 </body>

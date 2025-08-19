@@ -18,47 +18,66 @@ a:visited {
   color: white;
 }
 /* ______Navbar______ */
-.logo {
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 600;
-  align-items: center;
-  margin-right: 50px;
-}
-#logo {
-  width: 40px;
-}
 
-.logo_container {
-  display: flex;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 5rem;
-  padding: 0px 50px;
+.header {
   position: fixed;
-  top: 0;
-  z-index: 1;
   width: 100%;
-  background-color: #1e1e1f;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 4rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
-#navbar ul {
-  display: flex;
-  gap: 25px;
+body.light .header {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
-#navbar ul li {
+ul {
   list-style: none;
-  font-size: 0.95rem;
 }
-#navbar ul li a {
+a {
   text-decoration: none;
 }
-#navbar ul li a:hover {
-  color: rgb(238, 188, 24);
+
+.nav__close {
+  display: none;
 }
+
+.nav__toggle {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 4rem;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+
+.nav__link {
+  color: whitesmoke;
+  font-weight: 500;
+}
+
+.nav__logo {
+  font-size: larger;
+  font-weight: 600;
+  color: #23ce6b;
+  font-size: 1.9rem;
+  font-family: "bruno ace";
+}
+
+body.light .nav__link {
+  color: #212121;
+}
+
 #icons {
   color: white;
   background-color: #ff9f0d;
@@ -66,10 +85,90 @@ header {
   font-size: 1.5rem;
   border-radius: 20px;
 }
+
 #icons:hover {
   background-color: rgba(255, 191, 0, 0.843);
 }
+
+#logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* __________ Nav_media Queries ___________ */
+
+@media (min-width: 240px) and (max-width: 840px) {
+  .nav {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header {
+    backdrop-filter: none;
+    background-color: #212121;
+  }
+  body.light .header {
+    backdrop-filter: none;
+    background-color: #ffffff;
+  }
+  .nav__toggle,
+  .nav__close {
+    width: 32px;
+    height: 32px;
+    display: grid;
+    border: 2px solid white;
+    place-items: center;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: rgb(97, 97, 97, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    height: 100%;
+    width: 50%;
+    padding: 7rem 3.5rem 3.5rem;
+    transition: right 0.5s;
+    z-index: 999;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+
+  .nav__close {
+    position: absolute;
+    top: 0.8rem;
+    right: 1.5rem;
+  }
+
+  .show-menu {
+    right: 0;
+  }
+}
+@media (min-width: 240px) and (max-width: 890px) {
+  #icons {
+    display: none;
+  }
+}
+
+@media (min-width: 207px) and (max-width: 422px) {
+  .nav__menu {
+    padding: 7rem 2rem 3rem;
+    width: 70%;
+  }
+}
+
 /*_____Home_____ */
+
 #home {
   height: 120vh;
   margin-top: 120px;
@@ -127,7 +226,9 @@ header {
 .box img {
   width: 35px;
 }
+
 /*_______about________ */
+
 #about {
   display: flex;
   height: 150vh;
@@ -161,7 +262,9 @@ header {
 .color-1 {
   text-align: center;
   margin-bottom: 90px;
+  font-size: 1.9rem;
 }
+
 #shop img {
   width: 160px;
 }
@@ -170,12 +273,15 @@ header {
   text-align: center;
 }
 .shop {
-  background-color: #1e1e1f;
-  padding: 42px;
+  /* background-color: #1e1e1f; */
+  padding: 52px;
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 20px;
-  height: 390px;
+  height: 400px;
+}
+.shop:hover {
+  background-color: #1e1e1f;
 }
 .shop p,
 .shop h3 {
@@ -237,7 +343,9 @@ header {
   margin-bottom: 10px;
   margin-left: 5px;
 }
+
 /*____Scroll bar______ */
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 8px;
