@@ -42,12 +42,11 @@
     align-items: center;
   }
   #shop img {
-    margin-left: 50px;
-    width: 200px;
+    width: 260px;
   }
-  #btn {
+  /* #btn {
     margin-left: 80px;
-  }
+  } */
   #customer {
     flex-direction: column;
     align-items: center;
@@ -60,34 +59,32 @@
   #img-2 {
     display: none;
   }
-  .shop{
-    padding: 38px;
-  }
 }
 
 @media (min-width: 240px) and (max-width: 486px) {
-  #shop img {
-    margin-left: 20px;
-    width: 200px;
-  }
-   .shop{
+  .shop {
     padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   #btn {
-    margin-left: 80px;
-    margin-top: 17px;
+    margin: 0;
+    margin-top: 8px;
   }
-  .foot{
+
+  .foot {
     display: none;
   }
-  .box-1{
+  .box-1 {
     width: 310px;
   }
-  .text a{
+  .text a {
     display: none;
   }
-  #contact{
+  #contact {
     height: 20rem;
   }
 }
